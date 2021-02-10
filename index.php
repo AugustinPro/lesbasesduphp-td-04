@@ -1,5 +1,11 @@
 <?php
-// écrire votre code ici
+
+$password = 'test9cwsswc3';
+$message = '';
+
+(strlen($password) < 8) ? $message = 'Mot de passe trop court' : $message = 'OK';
+
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,7 +26,7 @@
     <h1 class="text-center">Condition - PHP</h1>
     
     <div class="alert"> <!-- ajoutez la classe bootstrap dynamiquement -->
-      <p>Remplacez-moi par le message</p>
+      <p><?= $message?></p>
     </div>
   </div>
 
